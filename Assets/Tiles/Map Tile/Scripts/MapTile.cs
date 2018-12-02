@@ -17,7 +17,10 @@ namespace UnityEngine.Tilemaps
     public class MapTile : Tile
     {
         public TileType TileType;
-        public byte MoveContraints;
+        public byte MoveConstraints;
+        // All moves cost 1
+        public byte AdditionalMoveCost;
         public TileUnityEvent tileEvent;
+
     }
 }

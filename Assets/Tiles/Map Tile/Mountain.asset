@@ -34,7 +34,8 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   TileType: 2
-  MoveContraints: 0
+  MoveConstraints: 1
+  AdditionalMoveCost: 2
   tileEvent:
     m_PersistentCalls:
       m_Calls: []
