@@ -17,6 +17,8 @@ namespace UnityEngine.Tilemaps
     public class MapTile : Tile
     {
         public TileType TileType;
+        public int BaseDefBoost;
+        public int BaseAvoidBoost;
         public byte MoveConstraints;
         // All moves cost 1
         public byte AdditionalMoveCost;

@@ -24,17 +24,37 @@ public class TileManager : MonoBehaviour {
 
     public Tilemap tilemap;
 
-    Dictionary<Vector3, TileState> tileStates;
+    Dictionary<Vector3Int, TileState> tileStates;
 
     private void Awake()
     {
         tileStates = InitTileState();
     }
 
-    // this may need to go in start() instead of awake(). I'll experiment later
-    private Dictionary<Vector3, TileState> InitTileState()
+    public bool TryGetTilePoint(Vector3 mousePos, out Vector3Int tilePoint)
     {
-        var states = new Dictionary<Vector3, TileState>();
+        var point = Camera.main.ScreenToWorldPoint(mousePos);
+        var boardPoint = new Vector3Int(Mathf.FloorToInt(point.x), Mathf.FloorToInt(point.y), 0);
+        bool tileFound = tilemap.HasTile(boardPoint);
+
+        tilePoint = tilemap.HasTile(boardPoint) ? boardPoint : new Vector3Int(0, 0, 0);
+        return tileFound;
+    }
+
+    public TileState GetTileState(Vector3Int point)
+    {
+        if (tileStates.ContainsKey(point))
+        {
+            return tileStates[point];
+        }
+
+        return null;
+    }
+
+    // this may need to go in start() instead of awake(). I'll experiment later
+    private Dictionary<Vector3Int, TileState> InitTileState()
+    {
+        var states = new Dictionary<Vector3Int, TileState>();
         foreach(Vector3Int pos in tilemap.cellBounds.allPositionsWithin)
         {
             var local = new Vector3Int(pos.x, pos.y, pos.z);
@@ -110,22 +130,5 @@ public class TileManager : MonoBehaviour {
 
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            var boardPoint = new Vector3Int(Mathf.FloorToInt(point.x), Mathf.FloorToInt(point.y), 0);
-            var unit = new Unit();
-
-            if (tilemap.HasTile(boardPoint))
-            {
-                var adjPoints = GetMoveRange(boardPoint, unit);
-
-                foreach (Vector3Int pnt in adjPoints)
-                {
-                    tilemap.SetTileFlags(pnt, TileFlags.None);
-                    tilemap.SetColor(pnt, Color.green);
-                }
-            }
-        }
     }
 }

@@ -34,6 +34,8 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   TileType: 1
+  BaseDefBoost: 1
+  BaseAvoidBoost: 10
   MoveConstraints: 1
   AdditionalMoveCost: 1
   tileEvent:
