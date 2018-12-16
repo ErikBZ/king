@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // use RTS style camera movement
+[RequireComponent(typeof(Camera))]
 public class RTSMoveCamera : MonoBehaviour {
 
     public Camera Camera;
@@ -13,8 +14,13 @@ public class RTSMoveCamera : MonoBehaviour {
 
     private Vector3 cameraVel = Vector3.zero;
 
-	// Update is called once per frame
-	void Update () {
+    private void Awake()
+    {
+        Camera = gameObject.GetComponent<Camera>();
+    }
+
+    // Update is called once per frame
+    void Update () {
         // Preempt the zero velocity
         cameraVel = Vector3.zero;
         
