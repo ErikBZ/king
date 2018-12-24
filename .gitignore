@@ -1,4 +1,7 @@
 Temp/*
+# Temp raw files like images and sound bites
+Assets/Raw/*
+Assets/Raw.meta
 
 # Unity Template gitignore
 [Ll]ibrary/
