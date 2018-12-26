@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb91d19347304a4ba32fe3d5e000c58, type: 3}
+  m_Name: SumYungGuy
+  m_EditorClassIdentifier: 
+  Name: Alex
+  PortraitSprite: {fileID: 21300006, guid: 21851740718b0844ab677aff1df474fd, type: 3}
+  Team: 0
+  MaxMove: 4
+  MoveType: 1
+  Class: {fileID: 11400000, guid: 0299cac1e5b91f64dbc43197c87e5b58, type: 2}
+  stats:
+    MaxHP: 0
+    Attack: 0
+    Magic: 0
+    Skill: 0
+    Speed: 0
+    Luck: 0
+    Def: 0
+    Res: 0
