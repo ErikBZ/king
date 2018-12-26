@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 320fc42d6c346d6418d7e35f97afd730, type: 3}
-  m_Name: ActiveUnits
+  m_Name: ActiveUnitsInLevel
   m_EditorClassIdentifier: 
   Units: []
