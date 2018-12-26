@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4168934163206688075
+--- !u!114 &1093450623457795370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,44 +9,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 8449093892486871693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ea3ea2b52031548aee53031e21b6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: b6c28bf77a6ab064e9817b4acba891ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 8449093892486871694}
-  m_OnClick:
+  Response:
     m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnHoverEvents:
-    m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4706676436719891589}
+        m_MethodName: UpdateUnitReference
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &4706676436719891589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449093892486871693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600d232d1ee99334fb53df106058cdc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveUnits: {fileID: 11400000, guid: bf12b5963d26e7943b950fa534c03263, type: 2}
+  ActiveUnitUpdatedEvent: {fileID: 11400000, guid: ae89ef9ce72ed304b9bb89f49713f861,
+    type: 2}
+  Reference: {fileID: 11400000, guid: 73d3c313fc4d9a1478d957f2b17985cb, type: 2}
+  HoverEvent: {fileID: 11400000, guid: 7a37226992acf574c8d12f0338bf9adc, type: 2}
+  LevelRestrictionContext: {fileID: 11400000, guid: ddbf48d7d4abc254fb08948d19b650fc,
+    type: 2}
+  Unit: {fileID: 0}
 --- !u!1001 &6145318926196239562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57,7 +58,7 @@ PrefabInstance:
     - target: {fileID: 2308579832385197639, guid: a196b5e1d5a15d04e9afa630ebb1db82,
         type: 3}
       propertyPath: m_Name
-      value: UnitButtonV2
+      value: UnitButtonV2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2308579832385197638, guid: a196b5e1d5a15d04e9afa630ebb1db82,
         type: 3}
@@ -164,8 +165,47 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82, type: 3}
+    - target: {fileID: 2308579832385197636, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308579832385197636, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4706676436719891589}
+    - target: {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateActiveUnits
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308579832385197637, guid: a196b5e1d5a15d04e9afa630ebb1db82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a196b5e1d5a15d04e9afa630ebb1db82, type: 3}
 --- !u!1 &8449093892486871693 stripped
 GameObject:
@@ -173,15 +213,3 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6145318926196239562}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8449093892486871694 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2308579832385197636, guid: a196b5e1d5a15d04e9afa630ebb1db82,
-    type: 3}
-  m_PrefabInstance: {fileID: 6145318926196239562}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8449093892486871693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
