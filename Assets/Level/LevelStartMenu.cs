@@ -20,7 +20,7 @@ public class LevelStartMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UnitsSelectForLevel.Units = new List<Unit>(levelRestrictions.LevelCapcity);
+        UnitsSelectForLevel.Units = new List<Unit>(levelRestrictions.AvailableTiles.Count);
         InitializeStartMenu(AvailableUnits.Units);
     }
 

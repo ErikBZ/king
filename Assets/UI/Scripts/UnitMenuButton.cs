@@ -43,7 +43,7 @@ public class UnitMenuButton : MonoBehaviour
             this.GetComponent<Image>().color = Color.grey;
         }
 
-        else if(units.Count < LevelRestrictionContext.LevelCapcity)
+        else if(units.Count < LevelRestrictionContext.AvailableTiles.Count)
         {
             units.Add(Unit);
             this.GetComponent<Image>().color = Color.white;

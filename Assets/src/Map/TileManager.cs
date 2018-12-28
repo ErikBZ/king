@@ -21,7 +21,6 @@ public class TileManager : MonoBehaviour {
         }
     }
 
-
     public Tilemap tilemap;
 
     Dictionary<Vector3Int, TileState> tileStates;
@@ -29,6 +28,7 @@ public class TileManager : MonoBehaviour {
     private void Awake()
     {
         tileStates = InitTileState();
+
     }
 
     public bool TryGetTilePoint(Vector3 mousePos, out Vector3Int tilePoint)

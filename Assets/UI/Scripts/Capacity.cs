@@ -18,6 +18,6 @@ public class Capacity : MonoBehaviour
     public void UpdateCapcity()
     {
         int activeUnitsCount = ActiveUnits.Units.Count;
-        this.GetComponent<Text>().text = string.Format("{0}/{1}", activeUnitsCount, Context.LevelCapcity);
+        this.GetComponent<Text>().text = string.Format("{0}/{1}", activeUnitsCount, Context.AvailableTiles.Count);
     }
 }
