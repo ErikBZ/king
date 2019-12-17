@@ -8,7 +8,6 @@ public class ViewSwitcher : MonoBehaviour
     public Toggle MenuToggleObject;
     public Toggle MapToggleObject;
 
-
     void Start()
     {
         this.GetComponentInChildren<Text>().text = MenuToggleObject.isOn ? "Menu" : "Map";

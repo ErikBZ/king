@@ -16,8 +16,6 @@ public class LevelStartMenu : MonoBehaviour
     public LevelRestrictionContext levelRestrictions;
 
     // this should be set by the map
-
-    // Start is called before the first frame update
     void Start()
     {
         UnitsSelectForLevel.Units = new List<Unit>(levelRestrictions.AvailableTiles.Count);
