@@ -10,7 +10,6 @@ public class Capacity : MonoBehaviour
     public LevelRestrictionContext Context;
     public UnitList ActiveUnits;
 
-
     private void Start()
     {
         UpdateCapcity();
