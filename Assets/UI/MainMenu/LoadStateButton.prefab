@@ -208,3 +208,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f27f7ee7b111494291fad8880d86407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SaveStateReference: {fileID: 11400000, guid: 270263c10ff3b4e4fbf26d4b22637c3b, type: 2}
+  SaveSelectedEvent: {fileID: 11400000, guid: 84a64170c6782bb4f972095d082730f5, type: 2}
