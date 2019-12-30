@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 // Maybe call this like UnityUtils?
 [CreateAssetMenu(fileName = "UnityUtils", menuName = "UnityUtils", order = 0)]

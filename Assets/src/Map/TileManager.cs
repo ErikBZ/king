@@ -28,7 +28,6 @@ public class TileManager : MonoBehaviour {
     private void Awake()
     {
         tileStates = InitTileState();
-
     }
 
     public bool TryGetTilePoint(Vector3 mousePos, out Vector3Int tilePoint)
@@ -57,6 +56,7 @@ public class TileManager : MonoBehaviour {
         var states = new Dictionary<Vector3Int, TileState>();
         foreach(Vector3Int pos in tilemap.cellBounds.allPositionsWithin)
         {
+            // why am i doing this?
             var local = new Vector3Int(pos.x, pos.y, pos.z);
             if (tilemap.HasTile(local))
             {
@@ -126,9 +126,5 @@ public class TileManager : MonoBehaviour {
         }
 
         return neighbors;
-    }
-
-    public void Update()
-    {
     }
 }

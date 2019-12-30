@@ -1,4 +1,4 @@
-﻿namespace King
+﻿namespace King.Map
 {
     public static class TileValues
     {

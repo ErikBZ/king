@@ -11,7 +11,6 @@ public class CreateSaveState : MonoBehaviour
     
     public void CreateAndSaveNewState()
     {
-        Debug.Log("CreateAndSave is called first");
         SaveState state = new SaveState();
         state.PlayerName = Input.text;
         SaveStateList.Saves.Add(state);
@@ -27,7 +26,6 @@ public class CreateSaveState : MonoBehaviour
 
     public void LoadNewSave()
     {
-        Debug.Log("LoadNewSave is called first");
         SaveSelectedEvent.Raise();
     }
 }
