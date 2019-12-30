@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using Newtonsoft.Json;
 
 namespace King.Loader
 {
@@ -10,7 +11,7 @@ namespace King.Loader
     // Must load before this class can be used
     class SaveStateLoader
     {
-        private const String SAVEBINARYPATH = "savedGames.gd";
+        private const String SAVEBINARYPATH = "savedGames.json";
 
         public static void Save(List<SaveState> saves)
         {
@@ -19,6 +20,12 @@ namespace King.Loader
 
             bf.Serialize(file, saves);
             file.Close();
+        }
+
+        public static void SaveToJson(List<SaveState> saves)
+        {
+            string json = JsonConvert.SerializeObject(saves);
+            File.WriteAllText(Path.Combine(Application.persistentDataPath, SAVEBINARYPATH), json);
         }
 
         public static List<SaveState> Load()
@@ -38,6 +45,19 @@ namespace King.Loader
                 saves = new List<SaveState>();
             }
 
+            return saves;
+        }
+
+        public static List<SaveState> LoadFromJson()
+        {
+            List<SaveState> saves = new List<SaveState>();
+            Debug.Log(Application.persistentDataPath);
+
+            if (File.Exists(Path.Combine(Application.persistentDataPath, SAVEBINARYPATH)))
+            {
+                string json = File.ReadAllText(Path.Combine(Application.persistentDataPath, SAVEBINARYPATH));
+                saves = JsonConvert.DeserializeObject<List<SaveState>>(json);
+            }
             return saves;
         }
     }

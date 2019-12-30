@@ -15,7 +15,7 @@ public class InitState : MonoBehaviour
         {
             // clear old garbage
             SaveStateList.Saves = new List<SaveState>();
-            SaveStateList.Saves = SaveStateLoader.Load();
+            SaveStateList.Saves = SaveStateLoader.LoadFromJson();
         }
 
         if (SaveStateList.Saves.Count == 0)

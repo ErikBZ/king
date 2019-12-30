@@ -14,7 +14,7 @@ public class CreateSaveState : MonoBehaviour
         SaveState state = new SaveState();
         state.PlayerName = Input.text;
         SaveStateList.Saves.Add(state);
-        SaveStateLoader.Save(SaveStateList.Saves);
+        SaveStateLoader.SaveToJson(SaveStateList.Saves);
 
         SetSaveStateReference(state);
     }
