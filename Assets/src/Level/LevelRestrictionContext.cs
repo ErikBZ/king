@@ -11,8 +11,4 @@ public class LevelRestrictionContext : ScriptableObject
     // Maybe add Needed/Restricted units ETC
     public List<Unit> UnitsNeeded;
     public List<Unit> UnitsRestricted;
-    public LevelRestrictionContext()
-    {
-
-    }
 }
