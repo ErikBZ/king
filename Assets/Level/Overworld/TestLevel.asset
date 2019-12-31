@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: TestLevel
   m_EditorClassIdentifier: 
   Name: Test Level
-  Map: {fileID: 11400000, guid: f96572cbe9e79e842a135e265e951e22, type: 2}
+  Map:
+    Name: 

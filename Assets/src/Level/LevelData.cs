@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using King.Map;
+﻿using UnityEngine;
 
 namespace King.Level
 {
@@ -12,6 +6,7 @@ namespace King.Level
     public class LevelData : ScriptableObject
     {
         public string Name;
-        public MapData Map;
+        [StringInList(typeof(LevelSelectHelper), "GetAllMaps")]
+        public string MapDataJsonPath;
     }
 }
