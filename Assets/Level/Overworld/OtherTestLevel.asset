@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4670f5066c960d5488081ebf5bc67d3c, type: 3}
-  m_Name: TestLevel
+  m_Name: OtherTestLevel
   m_EditorClassIdentifier: 
-  Name: Test Level
-  MapDataJsonPath: king_other_test_map.json
+  Name: OtherTest
+  MapDataJsonPath: king_test_map.json
