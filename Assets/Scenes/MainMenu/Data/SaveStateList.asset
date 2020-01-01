@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SaveStateList
   m_EditorClassIdentifier: 
   Saves:
-  - PlayerName: Other
-  - PlayerName: Player 2
+  - PlayerName: Test for json
+  - PlayerName: fuck idk
