@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using Newtonsoft.Json;
 using King.Utils;
+using King.Editor;
 
 [RequireComponent(typeof(TileManager))]
 public class InitTilemap : MonoBehaviour
