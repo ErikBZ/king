@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using Newtonsoft.Json;
 
-namespace King.Loader
+namespace King.SaveSystem
 {
     // Loads and Saves the state
     // Must load before this class can be used

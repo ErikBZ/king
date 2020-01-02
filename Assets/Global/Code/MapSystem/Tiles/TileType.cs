@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace King.Map
+namespace King.MapSystem.Tiles
 {
-
     public enum TileType
     {
         Wall,

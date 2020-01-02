@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using King.Map;
+using UnityEngine.Tilemaps;
+using King.MapSystem.Events;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
-namespace UnityEngine.Tilemaps
+namespace King.MapSystem.Tiles
 {
 
     [Serializable]

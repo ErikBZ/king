@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
-// Saves how the players units start in a given level
-public class PlayerStartContext
+namespace King.UnitSystem
 {
-    public HashSet<string> Units;
-    public PlayerStartContext()
+    // Saves how the players units start in a given level
+    public class PlayerStartContext
     {
-        Units = new HashSet<string>();
+        public HashSet<string> Units;
+        public PlayerStartContext()
+        {
+            Units = new HashSet<string>();
+        }
     }
 }

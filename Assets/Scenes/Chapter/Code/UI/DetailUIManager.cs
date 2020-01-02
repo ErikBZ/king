@@ -1,11 +1,8 @@
 ﻿using System.Text;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Tilemaps;
-using King.Pieces;
-using King.Map;
+using King.MapSystem;
+using King.MapSystem.Tiles;
 
 public class DetailUIManager : MonoBehaviour {
 

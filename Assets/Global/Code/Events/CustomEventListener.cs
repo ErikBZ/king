@@ -1,27 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
-public class CustomEventListener : MonoBehaviour
+namespace King.Events
 {
-    public CustomEvent Event;
-    public UnityEvent Response;
-
-    private void OnEnable()
+    public class CustomEventListener : MonoBehaviour
     {
-        Event.RegisterListener(this);
-    }
+        public CustomEvent Event;
+        public UnityEvent Response;
 
-    private void OnDisable()
-    {
-        Event.UnregisterListener(this);
-    }
+        private void OnEnable()
+        {
+            Event.RegisterListener(this);
+        }
 
-    public void OnEventRaised()
-    {
-        Response.Invoke();
-    }
+        private void OnDisable()
+        {
+            Event.UnregisterListener(this);
+        }
 
+        public void OnEventRaised()
+        {
+            Response.Invoke();
+        }
+
+    }
 }

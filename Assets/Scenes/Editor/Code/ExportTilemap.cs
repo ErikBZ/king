@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using King.Map;
-using King.Utils;
+using King.Utilities;
+using King.MapSystem;
+using King.MapSystem.Tiles;
 using Newtonsoft.Json;
 
 public class ExportTilemap : MonoBehaviour

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using King.Loader;
+using King.SaveSystem;
+using King.Events;
+using King.Utilities.Scriptable;
 
 public class CreateSaveState : MonoBehaviour
 {

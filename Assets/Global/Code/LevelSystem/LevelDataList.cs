@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace King.Level
+namespace King.LevelSystem
 {
     [CreateAssetMenu(fileName = "LevelDataList", menuName = "Level/List", order = 0)]
     public class LevelDataList : ScriptableObject

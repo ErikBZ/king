@@ -1,8 +1,7 @@
 ﻿using UnityEditor;
-using UnityEngine;
 using System.Collections.Generic;
 
-namespace King.Utils
+namespace King.Utilities
 {
     public static class AssetFinder
     {

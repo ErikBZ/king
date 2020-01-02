@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using King.Loader;
 
-namespace King.Loader
+namespace King.SaveSystem
 {
     [CreateAssetMenu(fileName = "SaveStateList", menuName = "Saves/List", order = 0)]
     public class SaveStateList : ScriptableObject

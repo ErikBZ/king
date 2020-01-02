@@ -1,9 +1,7 @@
 ﻿using System.Text;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using King.Pieces;
+using King.UnitSystem;
 
 public class DetailPanel : MonoBehaviour
 {

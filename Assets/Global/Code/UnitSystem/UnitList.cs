@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace King.Pieces
+namespace King.UnitSystem
 {
     // Use this class to keep track of active units and ETC
     [CreateAssetMenu(fileName = "UnitList", menuName = "king/UnistList", order = 0)]

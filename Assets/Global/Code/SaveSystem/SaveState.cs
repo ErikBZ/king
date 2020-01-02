@@ -1,7 +1,6 @@
 ﻿using System;
-using UnityEngine;
 
-namespace King.Loader
+namespace King.SaveSystem
 {
     [Serializable]
     public class SaveState

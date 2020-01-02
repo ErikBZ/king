@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using King.Pieces;
+using King.UnitSystem;
+using King.Events;
+using King.LevelSystem;
 
 [RequireComponent(typeof(Button))]
 public class UnitMenuButton : MonoBehaviour

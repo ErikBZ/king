@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using King.Map;
+﻿using UnityEngine;
+using King.MapSystem.Tiles;
 
-namespace King.Pieces
+namespace King.UnitSystem
 {
     [CreateAssetMenu(fileName = "Unit", menuName = "king/Unit", order = 0)]
     public class Unit : ScriptableObject

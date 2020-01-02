@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using King.Loader;
-using King.Level;
+using King.LevelSystem;
+using King.Events;
+using King.Utilities.Scriptable;
 
 [RequireComponent(typeof(Button))]
 public class SelectLevelButton : MonoBehaviour

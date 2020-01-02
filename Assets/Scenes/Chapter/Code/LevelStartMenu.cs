@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using King.Pieces;
+using King.UnitSystem;
+using King.LevelSystem;
 
 public class LevelStartMenu : MonoBehaviour
 {

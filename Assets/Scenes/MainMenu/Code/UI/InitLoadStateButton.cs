@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using King.Loader;
+using King.SaveSystem;
+using King.Events;
+using King.Utilities.Scriptable;
 
 [RequireComponent(typeof(Button))]
 public class InitLoadStateButton : MonoBehaviour

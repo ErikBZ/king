@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using King.Pieces;
+﻿using King.UnitSystem;
 
-namespace King.Map
+namespace King.MapSystem
 {
     public class TileState
     {

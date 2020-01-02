@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 
-namespace King.Utils
+namespace King.Utilities
 {
     public class DictVec3IntStringConverter : JsonConverter<Dictionary<Vector3Int, string>>
     {

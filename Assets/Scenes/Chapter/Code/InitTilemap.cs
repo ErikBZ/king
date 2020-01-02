@@ -1,12 +1,13 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using King.Level;
-using King.Map;
-using King.Utils;
-using King.Utilities;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using King.LevelSystem;
+using King.Utilities;
+using King.Utilities.Scriptable;
+using King.MapSystem;
+using King.MapSystem.Tiles;
 using Newtonsoft.Json;
 
 [RequireComponent(typeof(TileManager))]

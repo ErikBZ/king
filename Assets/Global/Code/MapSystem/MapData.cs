@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
-using King.Pieces;
 
-namespace King.Map
+namespace King.MapSystem
 {
     [Serializable]
     public class MapData

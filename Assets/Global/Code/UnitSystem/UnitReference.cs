@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace King.Pieces
+namespace King.UnitSystem
 {
 
     [CreateAssetMenu(fileName = "UnitReference", menuName = "king/UnitReference", order = 0)]
