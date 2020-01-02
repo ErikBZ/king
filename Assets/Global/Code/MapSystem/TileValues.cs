@@ -17,10 +17,5 @@
         public const byte SEA = SWIM & FLY;
         public const byte CLIFF = FLY;
         public const byte NONE = 0x0;
-
-        public static void DoesSomething()
-        {
-            byte thing = SWIM & STANDARD;
-        }
     }
 }
