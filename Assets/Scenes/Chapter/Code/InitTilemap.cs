@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using King.Level;
 using King.Map;
+using King.Utils;
+using King.Utilities;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using Newtonsoft.Json;
-using King.Utils;
-using King.Editor;
 
 [RequireComponent(typeof(TileManager))]
 public class InitTilemap : MonoBehaviour
