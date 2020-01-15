@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Weedgod
   m_EditorClassIdentifier: 
   Name: WEEDGAWD
-  PortraitSprite: {fileID: 21300000, guid: 21851740718b0844ab677aff1df474fd, type: 3}
+  PortraitSprite: {fileID: 21300000, guid: 6b91f5c237e713344a9fbf12df306d21, type: 3}
   Team: 0
   MaxMove: 4
   MoveType: 1

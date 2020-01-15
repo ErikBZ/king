@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TestLevel
   m_EditorClassIdentifier: 
   Name: Test Level
-  MapDataJsonPath: king_other_test_map.json
+  MapDataJsonPath: TestMap6.json

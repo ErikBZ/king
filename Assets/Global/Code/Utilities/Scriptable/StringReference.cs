@@ -4,4 +4,9 @@
 public class StringReference : ScriptableObject
 {
     public string Reference;
+
+    public void UpdateReference(string update)
+    {
+        Reference = update;
+    }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924e7058804b3a14c9bc96037602fabf, type: 3}
   m_Name: Bunny
   m_EditorClassIdentifier: 
-  ClassName: 
+  ClassName: Bunny
   Weapons: 0
   MaxAttack: 0
   MaxMagic: 0

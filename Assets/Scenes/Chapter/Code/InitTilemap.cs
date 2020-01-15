@@ -24,6 +24,7 @@ public class InitTilemap : MonoBehaviour
 
         if (!ObjectReference.NotEmpty(LevelDataReference, out LevelData levelData))
         {
+            Debug.Log("Creating tilemap");
             string path = levelData.MapDataJsonPath;
             MapData MapData = LoadMapData(path);
 
@@ -43,7 +44,9 @@ public class InitTilemap : MonoBehaviour
 
     MapData LoadMapData(string path)
     {
-        string fullPath = Path.Combine(Application.dataPath, LevelSelectHelper.MapDirectory, path);
+        string fullPath = Path.Combine(LevelSelectHelper.MapsDirectory, path);
+        Debug.Log(fullPath);
+
         if (File.Exists(fullPath))
         {
             string data = File.ReadAllText(fullPath);

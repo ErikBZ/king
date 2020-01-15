@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdb91d19347304a4ba32fe3d5e000c58, type: 3}
-  m_Name: SumYungGuy
+  m_Name: Bunny
   m_EditorClassIdentifier: 
-  Name: Alex
-  PortraitSprite: {fileID: 21300006, guid: 21851740718b0844ab677aff1df474fd, type: 3}
+  Name: Mai
+  PortraitSprite: {fileID: 21300000, guid: 7cb55798aad6f7e43930b49eecba55bc, type: 3}
   Team: 0
   MaxMove: 4
   MoveType: 1
-  Class: {fileID: 11400000, guid: 0299cac1e5b91f64dbc43197c87e5b58, type: 2}
+  Class: {fileID: 11400000, guid: 2a99f6b1712828b4489001748b9687b7, type: 2}
   stats:
     MaxHP: 0
     Attack: 0
