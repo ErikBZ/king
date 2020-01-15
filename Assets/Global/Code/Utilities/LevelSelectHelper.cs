@@ -6,7 +6,14 @@ namespace King.Utilities
 {
     public static class LevelSelectHelper
     {
-        public const string MapDirectory = "Level/Maps";
+        public const string MapDirectory = "Global/Data/MapSystem/Maps";
+        public static string MapsDirectory 
+        { 
+            get
+            {
+                return Path.Combine(Application.dataPath, MapDirectory);
+            }
+        }
 
         // checks the "maps" sub directory for maps
         public static string[] GetAllMaps()
