@@ -51,7 +51,6 @@ namespace King.SaveSystem
         public static List<SaveState> LoadFromJson()
         {
             List<SaveState> saves = new List<SaveState>();
-            Debug.Log(Application.persistentDataPath);
 
             if (File.Exists(Path.Combine(Application.persistentDataPath, SAVEBINARYPATH)))
             {

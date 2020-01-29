@@ -45,7 +45,6 @@ public class InitTilemap : MonoBehaviour
     MapData LoadMapData(string path)
     {
         string fullPath = Path.Combine(LevelSelectHelper.MapsDirectory, path);
-        Debug.Log(fullPath);
 
         if (File.Exists(fullPath))
         {

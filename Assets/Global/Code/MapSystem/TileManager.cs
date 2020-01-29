@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 using King.UnitSystem;
 using King.MapSystem.Tiles;
 
+// TODO move to scenes? 
 namespace King.MapSystem
 {
     public class TileManager : MonoBehaviour
@@ -26,7 +27,7 @@ namespace King.MapSystem
         public Tilemap tilemap;
         Dictionary<Vector3Int, TileState> tileStates;
 
-        private void Awake()
+        public void OnEnable()
         {
             tileStates = InitTileState();
         }
