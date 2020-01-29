@@ -9,13 +9,15 @@ public class LevelStartMenu : MonoBehaviour
     public GameObject ButtonPrefab;
     public GameObject UnitListDisplay;
     public UnitList AvailableUnits;
-    public UnitList UnitsSelectForLevel;
+    public UnitList UnitsSelectedForLevel;
     public LevelRestrictionContext levelRestrictions;
+
+    [SerializeField] GameObject HUD;
 
     // this should be set by the map
     void Start()
     {
-        UnitsSelectForLevel.Units = new List<Unit>(levelRestrictions.AvailableTiles.Count);
+        UnitsSelectedForLevel.Units = new List<Unit>(levelRestrictions.AvailableTiles.Count);
         InitializeStartMenu(AvailableUnits.Units);
     }
 
