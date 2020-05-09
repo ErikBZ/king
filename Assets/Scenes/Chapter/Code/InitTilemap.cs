@@ -8,12 +8,19 @@ using King.Utilities;
 using King.Utilities.Scriptable;
 using King.MapSystem;
 using King.MapSystem.Tiles;
+using King.Events;
 using Newtonsoft.Json;
 
 [RequireComponent(typeof(TileManager))]
 public class InitTilemap : MonoBehaviour
 {
     public ObjectReference LevelDataReference;
+
+    [SerializeField]
+    CustomEvent onMapLoaded;
+    [SerializeField]
+    ObjectReference TilePositionsInMap;
+
     Tilemap MainMap;
     TileManager TileManager;
 
@@ -22,7 +29,7 @@ public class InitTilemap : MonoBehaviour
         TileManager = GetComponent<TileManager>();
         TileManager.enabled = false;
 
-        if (!ObjectReference.NotEmpty(LevelDataReference, out LevelData levelData))
+        if (ObjectReference.NotEmpty(LevelDataReference, out LevelData levelData))
         {
             Debug.Log("Creating tilemap");
             string path = levelData.MapDataJsonPath;
@@ -37,6 +44,9 @@ public class InitTilemap : MonoBehaviour
             tilemap.ClearAllTiles(); 
 
             ImportMap(MapData, tilemap);
+
+            TilePositionsInMap.Reference = MapData.Tiles.Keys.ToList();
+            onMapLoaded.Raise();
         }
 
         TileManager.enabled = true;
