@@ -11,17 +11,18 @@ namespace King.Utilities.Scriptable
         {
             return objRef != null && objRef.Reference != null;
         }
+
         public static bool NotEmpty<T>(ObjectReference objRef, out T obj)
         {
             if (objRef != null && objRef.Reference != null && objRef.Reference is T)
             {
                 obj = (T)objRef.Reference;
-                return false;
+                return true;
             }
             else
             {
                 obj = default(T);
-                return true;
+                return false;
             }
         }
     }

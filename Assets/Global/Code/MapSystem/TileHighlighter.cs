@@ -37,7 +37,7 @@ namespace King.MapSystem
             foreach(Vector3Int point in tiles)
             {
                 tileBag.Remove(point);
-                Map.SetColor(point, Color.white);
+                Map.SetColor(point, Color.clear);
             }
         }
 
@@ -45,39 +45,33 @@ namespace King.MapSystem
         {
             if(!tileBag.Contains(tile) || tileBag.Count != 1)
             {
-                Clear();
+                ClearAllInBag();
                 Add(new List<Vector3Int>() { tile }, Color.yellow);
             }
         }
 
-        public void Clear()
+        public void ClearAllInBag()
         {
             foreach(Vector3Int point in tileBag)
             {
-                Map.SetColor(point, Color.white);
+                Map.SetColor(point, Color.clear);
             }
 
             tileBag.Clear();
         }
 
-        public void Highlight(List<Vector3Int> tilePoints, Color color)
+        public void Highlight(List<Vector3Int> tilePositions, Color color)
         {
-            foreach(Vector3Int tile in tilePoints)
+            foreach(Vector3Int tilePos in tilePositions)
             {
-                Map.SetTileFlags(tile, TileFlags.None);
-                Map.SetColor(tile, color);
+                Map.SetTileFlags(tilePos, TileFlags.None);
+                Map.SetColor(tilePos, color);
             }
         }
 
         public void ResetHighlight(List<Vector3Int> tilePoints)
         {
-            Highlight(tilePoints, Color.white);
+            Highlight(tilePoints, Color.clear);
         }
-
-        // sets all tile highlight to none
-        public void ClearHighlight()
-        {
-        }
-
     }
 }
