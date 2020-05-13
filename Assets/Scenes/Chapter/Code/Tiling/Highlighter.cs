@@ -48,7 +48,6 @@ public class Highlighter : MonoBehaviour
         highlighter.ClearAllInBag();
         if (ObjectReference.NotEmpty(tilesToHighlight, out List<Vector3Int> tiles))
         {
-            Debug.Log("Tiles:" + tiles.ToString());
             highlighter.Add(tiles, hightlightColor);
         }
     }
