@@ -31,7 +31,6 @@ public class InitTilemap : MonoBehaviour
 
         if (ObjectReference.NotEmpty(LevelDataReference, out LevelData levelData))
         {
-            Debug.Log("Creating tilemap");
             string path = levelData.MapDataJsonPath;
             MapData MapData = LoadMapData(path);
 
